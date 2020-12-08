@@ -1,0 +1,7 @@
+@mixin adaptive-font($minSize, $initSize, $screenWidth: $maket-width) {
+    font-size: calc(#{$minSize + px} + #{$initSize - $minSize} * ((100vw - 320px) / #{$screenWidth - 320}));
+    // $minSize минимальный размер шрифта
+    // $initSize размер шрифта по макету
+    // $screenWidth ширина экрана по макету
+    // @include adaptive-font(28, 36);
+}

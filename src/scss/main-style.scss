@@ -1,0 +1,22 @@
+@import '../css/my_normalize.css';
+
+@import '_variables';
+@import '_mixins';
+
+
+
+body {
+    background: rgb(155, 155, 155);
+}
+
+.container {
+    max-width: 1224px;
+    padding: 0 12px;
+    margin: 0 auto;
+}
+
+
+
+
+
+@import '_media-queries';
