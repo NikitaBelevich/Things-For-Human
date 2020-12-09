@@ -5,3 +5,19 @@
     // $screenWidth ширина экрана по макету
     // @include adaptive-font(28, 36);
 }
+
+@mixin open400 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+@mixin open600 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+@mixin merriweather400 {
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    font-style: normal;
+}

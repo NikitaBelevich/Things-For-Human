@@ -1,0 +1,70 @@
+.header {
+    height: 1000px;
+    background-image: url('../img/bgheader.png');
+    background-size: cover;
+    background-position: 0 0;
+
+    &__content {
+        padding-top: 17.1rem;
+        text-align: center;
+    }
+
+    &__title-h1 {
+        padding: 37px 53px 56px 49px;
+        display: inline-block;
+        @include merriweather400;
+        font-size: 60px;
+        letter-spacing: 3px;
+        line-height: 90px;
+        color: #fff;
+        border: 1px solid #8f8f8f7d;
+
+        span {
+            color: #f7ac53;
+        }
+    }
+
+    &__features {
+        margin-top: 1.9rem;
+        display: flex;
+        justify-content: center;
+
+        li {
+            margin-right: 0.9rem;
+            margin-left: 0.8rem;
+            @include open400;
+            font-size: 13px;
+            text-transform: uppercase;
+            color: #fff;
+            position: relative;
+
+            &:not(:last-child)::after {
+                content: '';
+                position: absolute;
+                right: -15px;
+                top: 0;
+                display: block;
+                height: 13px;
+                width: 1.5px;
+                background-color: #f7ac53;
+            }
+        }
+    }
+
+    &__arrow-down {
+        display: inline-block;
+        margin-top: 13.2rem;
+    }
+
+    &__btn-scroll {}
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 6rem;
+        padding-left: 3px;
+        padding-right: 17px;
+    }
+
+}

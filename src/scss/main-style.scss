@@ -1,22 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 @import '../css/my_normalize.css';
 
-@import '_variables';
-@import '_mixins';
+@import 'variables';
+@import 'mixins';
+@import 'components';
+
+
+@import 'header';
 
 
 
-body {
-    background: rgb(155, 155, 155);
-}
-
-.container {
-    max-width: 1224px;
-    padding: 0 12px;
-    margin: 0 auto;
-}
-
-
-
-
-
-@import '_media-queries';
+@import 'media-queries';
