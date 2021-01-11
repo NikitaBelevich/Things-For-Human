@@ -17,3 +17,36 @@
         transform: translate(11px, -1px);
     }
 }
+
+.small-caption {
+    @include open600;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.small-caption_brand-color {
+    color: $brand-orange-color;
+}
+
+.small-caption_with-vertical-line {
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 37px;
+        height: 124px;
+        width: 2px;
+        background-color: $brand-orange-color;
+    }
+}
+
+.title-h2 {
+    @include merriweather400;
+    font-size: 44px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #fff;
+}

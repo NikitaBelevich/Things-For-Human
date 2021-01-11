@@ -1,0 +1,50 @@
+.services {
+    height: 826px;
+    background-color: $dark1;
+
+    &__small-caption {
+        padding-top: 9.2rem;
+        text-align: center;
+    }
+
+    &__title {
+        padding-top: 1.5rem;
+        line-height: 65px;
+    }
+
+    &__item-wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 6.7rem;
+        padding-left: 4rem;
+        padding-right: 5rem;
+    }
+
+    &__item {
+        flex-basis: 22%;
+    }
+
+    &__item-icon {}
+
+    &__item-caption {
+        @include merriweather400;
+        font-size: 30px;
+        padding-top: 31px;
+        letter-spacing: 3.3px;
+        color: #fff;
+    }
+
+    &__item-description {
+        @include open400;
+        font-size: 14px;
+        padding-top: 1.2rem;
+        line-height: 27px;
+        word-spacing: 2px;
+        color: #bbbbbb;
+    }
+
+    &__item-link {
+        margin-top: 1.7rem;
+    }
+
+}
