@@ -1,0 +1,24 @@
+.partners {
+    height: 1125px;
+    background-color: $dark1;
+
+    &__small-caption {
+        padding-top: 9.2rem;
+        text-align: center;
+    }
+
+    &__title {
+        margin-top: 1.4rem;
+        line-height: 65px;
+    }
+
+    &__logoes {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 6.5rem;
+    }
+
+    &__logo {}
+
+}
