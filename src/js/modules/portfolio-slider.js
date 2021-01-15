@@ -1,4 +1,4 @@
-export const mySwiper = new Swiper('.swiper-container', {
+export const mySwiper = new Swiper('.portfolio-slider .swiper-container', {
     // Optional parameters
     loop: true,
     autoplay: {
@@ -7,10 +7,10 @@ export const mySwiper = new Swiper('.swiper-container', {
     effect: 'fade',
     centeredSlides: true,
     navigation: {
-        nextEl: '.portfolio-slider__next-slide',
+        nextEl: '.portfolio-slider .portfolio-slider__next-slide',
     },
     pagination: {
-        el: '.swiper-pagination',
+        el: '.portfolio-slider .swiper-pagination',
         clickable: true,
     },
 });
