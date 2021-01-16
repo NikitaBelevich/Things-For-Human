@@ -21,4 +21,85 @@
 
     &__logo {}
 
+    &__reviews-container {
+        margin: 0 auto;
+        margin-top: 5.9rem;
+        width: 750px;
+        height: 377px;
+        box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.3);
+        background-color: $dark2;
+    }
+
+    &__slide {
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        align-items: center;
+    }
+    &__person-picture {
+        border-radius: 50%;
+    }
+
+    &__description-slide {
+        padding-top: 2.5rem;
+        width: 613px;
+        color: #bbbbbb;
+        @include merriweather400;
+        font-size: 18px;
+        letter-spacing: 1.13px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    &__partner {
+        margin-top: 2.7rem;
+        letter-spacing: 0.3px;
+    }
+
+    &__manager-name {
+        text-align: center;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            left: -210px;
+            top: 2px;
+            width: 168px;
+            height: 2px;
+            background-color: #474747;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            left: 176px;
+            top: 2px;
+            width: 168px;
+            height: 2px;
+            background-color: #474747;
+        }
+    }
+
+    &__company-name {
+        margin-top: .8rem;
+    }
+
+    .swiper-pagination {
+        position: relative;
+        top: 35px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .swiper-pagination-bullet {
+        height: 3px;
+        width: 30px;
+        background-color: #999999;
+        border-radius: 0;
+    }
+    .swiper-pagination-bullet:not(:first-child) {
+        margin-left: 46px;
+    }
+    
+    .swiper-pagination-bullet-active {
+        background-color: $brand-orange-color;
+    }
 }

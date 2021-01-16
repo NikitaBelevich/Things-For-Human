@@ -4,6 +4,7 @@ export const mySwiper = new Swiper('.portfolio-slider .swiper-container', {
     autoplay: {
         delay: 3000,
     },
+    grabCursor: true,
     effect: 'fade',
     centeredSlides: true,
     navigation: {

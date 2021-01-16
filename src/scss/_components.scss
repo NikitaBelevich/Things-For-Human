@@ -19,7 +19,7 @@
 }
 
 .small-caption {
-    @include open600;
+    @include open400;
     font-size: 14px;
     text-transform: uppercase;
     color: #fff;
@@ -49,4 +49,12 @@
     letter-spacing: 2px;
     text-align: center;
     color: #fff;
+}
+
+.position-of-the-person {
+    @include open400;
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: normal;
+    text-align: center;
 }
