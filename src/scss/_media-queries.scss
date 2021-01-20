@@ -15,7 +15,22 @@
 }
 
 @media screen and (max-width:991.98px){
-    
+    .our-team {
+        // height: 1500px;
+        // background-color: $dark2;
+        &__workers {
+            grid-template-columns: repeat(auto-fill , minmax(200px, 1fr));
+        }
+        &__worker {
+            // &:nth-child(-n+4) {
+            //     // $dark1
+            //     border-bottom: 1px solid red;
+            // }
+            // &:not(:nth-child(1n)) {
+            //     border-right: 1px solid red;
+            // }
+        }
+    }
 }
 
 @media screen and (max-width:767.98px){
