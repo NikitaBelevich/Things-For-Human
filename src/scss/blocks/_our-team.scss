@@ -23,6 +23,8 @@
     }
 
     &__worker {
+        overflow: hidden;
+        position: relative;
         // margin-left: 281px;
         // width: 290px;
         // height: 320px;
@@ -36,6 +38,52 @@
         &:not(:nth-child(4n)) {
             border-right: 1px solid red;
         }
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 2px;
+            height: 0px;
+            background-color: $brand-orange-color;
+            transition: .5s ease-out;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 0px;
+            height: 2px;
+            background-color: $brand-orange-color;
+            transition: .5s ease-out;
+        }
+
+        &:hover{
+            .our-team__worker-photo {
+                width: 50px;
+                height: 50px; 
+                transform: translate(-6.4rem, -2.25rem);
+            }
+            .our-team__worker-text {
+                animation: transform-name .5s ease-out forwards;
+            } 
+            .our-team__worker-position {
+                text-align: left;
+            }
+            .our-team__worker-description {
+                animation: show-person-description .5s ease-out forwards;
+                animation-delay: .4s;
+            }
+            &::before {
+                content: '';
+                height: 67px;
+            }
+            &::after {
+                content: '';
+                width: 67px;
+            }
+        }
     }
 
     &__worker-photo {
@@ -43,6 +91,7 @@
         height: 120px;
         border-radius: 100%;
         margin-top: 3.1rem;
+        transition: .5s ease-out;
     }
 
     &__worker-name {
@@ -51,5 +100,43 @@
 
     &__worker-position {
         margin-top: .8rem;
+        text-align: center;
+    }
+    &__worker-description {
+        width: 177px;
+        height: 261px;
+        position: absolute;
+        right: 20px;
+        top: 8px;
+
+        visibility: hidden;
+        opacity: 0;
+
+        color: #bababa;
+        @include open400;
+        font-size: 13px;
+        line-height: 25px;
+    }
+}
+
+@keyframes transform-name{
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(90deg);
+    }
+    100% {
+        transform: rotate(90deg) translate(0.9rem, 5.7rem);
+    }
+}
+@keyframes show-person-description{
+    0% {
+        visibility: hidden;
+        opacity: 0;
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
     }
 }
