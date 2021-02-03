@@ -52,7 +52,13 @@
         text-align: left;
         text-transform: uppercase;
         height: 44px;  
-        transition: .3s ease-out;      
+        transition: .25s ease-out;      
+    }
+    &__label_focus {
+        color: $brand-orange-color;
+        @include open400;
+        font-size: 11px;
+        transform: translateY(-15px);        
     }
 
     &__input {
@@ -63,7 +69,7 @@
         background-color: transparent;
         border-bottom: 2px solid #5c5c5c;
         transition-property: border-bottom-color;
-        transition: .3s ease-out;
+        transition: .25s ease-out;
         color: #fff;
 
         &:focus {
