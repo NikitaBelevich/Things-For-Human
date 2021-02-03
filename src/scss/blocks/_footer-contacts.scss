@@ -1,14 +1,81 @@
-
 .footer-contacts {
     height: 1175px;
     background-color: $color-footer;
-    
+
     &__small-caption {
         padding-top: 9.2rem;
         text-align: center;
     }
+
     &__title {
         margin-top: 2.2rem;
         letter-spacing: 2.3px;
     }
+
+    &__form-container {
+        margin: 0 auto;
+        margin-top: 5.2rem;
+        padding: 26px 57px 57px 57px;
+        box-sizing: border-box;
+        width: 751px;
+        height: 501px;
+        box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.3);
+        background-color: $dark2;
+    }
+    &__fields {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        min-height: 326px;
+
+    }
+
+    &__field-wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+
+        &:nth-child(5) {
+            // background-color: red;
+            flex-basis: 100%;
+        }
+    }
+    &__field-wrapper_message {
+        margin-top: 35px;
+    }
+
+    &__label {
+        @include open400;
+        color: #fff;
+        font-size: 14px;
+        line-height: 65px;
+        text-align: left;
+        text-transform: uppercase;
+        height: 44px;  
+        transition: .3s ease-out;      
+    }
+
+    &__input {
+        width: 275px;
+        border: 0;
+        padding: 0;
+        padding-bottom: 2px;
+        background-color: transparent;
+        border-bottom: 2px solid #5c5c5c;
+        transition-property: border-bottom-color;
+        transition: .3s ease-out;
+        color: #fff;
+
+        &:focus {
+            border-bottom-color: $brand-orange-color;
+        }
+        
+        
+    }
+
+    &__input_message {
+        width: 100%;
+    }
 }
+
+
