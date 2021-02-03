@@ -1,0 +1,14 @@
+
+.footer-contacts {
+    height: 1175px;
+    background-color: $color-footer;
+    
+    &__small-caption {
+        padding-top: 9.2rem;
+        text-align: center;
+    }
+    &__title {
+        margin-top: 2.2rem;
+        letter-spacing: 2.3px;
+    }
+}
