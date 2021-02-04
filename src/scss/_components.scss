@@ -56,5 +56,22 @@
     color: #fff;
     font-size: 13px;
     letter-spacing: normal;
-    // text-align: center;
+}
+
+.btn-one {
+    width: 220px;
+    padding: 20px 38px;
+    border: none;
+    background-color: $brand-orange-color;
+    color: #232323;
+    @include open600;
+    font-size: 17px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: .25s;
+
+    &:hover {
+        color: #fff;
+        box-shadow: 3px -3px 6px $brand-orange-color;
+    }
 }

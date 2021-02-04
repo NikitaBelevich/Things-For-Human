@@ -11,7 +11,7 @@ function labelFocusEffect() {
         targetLabel.classList.add('footer-contacts__label_focus');
 
         targetInput.addEventListener('blur', () => {
-            targetLabel.classList.remove('footer-contacts__label_focus')
+            targetLabel.classList.remove('footer-contacts__label_focus');
         });
     });
 };
