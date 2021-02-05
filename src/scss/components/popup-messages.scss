@@ -1,0 +1,26 @@
+.popup-message {
+    box-sizing: border-box;
+    margin-top: 10px;
+    padding: 10px 15px;
+    width: 350px;
+    min-height: 80px;
+}
+.popup-message_style-class {
+    border-radius: 4px;
+    background-color: $brand-orange-color;
+    box-shadow: 0px 0px 8px $brand-orange-color;
+    transition: .3s ease-out;
+    @include open600;
+    font-size: 16px;
+    text-align: center;
+    line-height: 28px;
+}
+.popup-message_hide {
+    opacity: 0;
+    visibility: hidden;
+}
+.message-wrapper {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+}
