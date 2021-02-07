@@ -1,8 +1,8 @@
 @font-face {
 	font-family: 'ElegantIcons';
-	src:url('../fonts/ElegantIcons.eot');
 	src:url('../fonts/ElegantIcons.woff') format('woff'),
-		url('../fonts/ElegantIcons.ttf') format('truetype');
+		url('../fonts/ElegantIcons.ttf') format('truetype'),
+        url('../fonts/ElegantIcons.eot');
 	font-weight: normal;
 	font-style: normal;
 }
