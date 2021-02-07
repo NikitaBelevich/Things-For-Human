@@ -55,8 +55,9 @@
         display: inline-block;
         margin-top: 13rem;
         transition: .3s;
+        transform: translateX(-2px);
         &:hover{
-            transform: translateY(4px);
+            transform: translate(-2px, 4px);
         }
     }
 
