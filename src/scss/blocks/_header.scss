@@ -53,10 +53,17 @@
 
     &__arrow-down {
         display: inline-block;
-        margin-top: 13.2rem;
+        margin-top: 13rem;
+        transition: .3s;
+        &:hover{
+            transform: translateY(4px);
+        }
     }
 
-    &__btn-scroll {}
+    &__btn-scroll {
+        color: $brand-orange-color;
+        font-size: 19px;
+    }
 
     &__bottom {
         display: flex;
