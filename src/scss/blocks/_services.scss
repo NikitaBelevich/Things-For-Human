@@ -1,5 +1,5 @@
 .services {
-    height: 826px;
+    min-height: 826px;
     background-color: $dark1;
 
     &__small-caption {
@@ -28,7 +28,7 @@
 
     &__item-caption {
         @include merriweather400;
-        font-size: 30px;
+        @include adaptive-font(20, 30);
         padding-top: 31px;
         letter-spacing: 3.3px;
         color: #fff;

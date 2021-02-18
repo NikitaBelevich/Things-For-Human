@@ -28,6 +28,9 @@
     font-size: 14px;
     text-transform: uppercase;
     color: #fff;
+    @media screen and (max-width:370px) {
+        font-size: 12px;
+    }
 }
 
 .small-caption_brand-color {
@@ -50,7 +53,7 @@
 
 .title-h2 {
     @include merriweather400;
-    font-size: 44px;
+    @include adaptive-font(22, 44);
     letter-spacing: 2px;
     text-align: center;
     color: #fff;
