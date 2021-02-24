@@ -1,18 +1,18 @@
 .portfolio-slider {
     padding-top: 149px;
-    height: 800px;
+    min-height: 800px;
     background-color: $dark2;
     -webkit-user-select: none;
 
 
     .swiper-container {
-        height: 600px;
+        max-height: 600px;
         display: flex;
         justify-content: center;
     }
 
     .swiper-wrapper {
-        width: 800px;
+        max-width: 800px;
     
         &::before {
             content: '';
@@ -39,6 +39,13 @@
             color: #fff;
         }
     }
+
+    .swiper-slide__picture {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+    }
+
     .swiper-slide-active {
         .swiper-slide__title {
             visibility: visible; 

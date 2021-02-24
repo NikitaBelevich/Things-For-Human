@@ -36,6 +36,29 @@
             flex-basis: 30%;
         }
     }
+
+    .portfolio-slider {
+        padding-top: 50px;
+        padding-bottom: 80px;
+        min-height: auto;
+        .swiper-wrapper {
+            &::before {
+                content: '';
+                display: none;
+            }
+        }
+        &__small-caption {
+            display: none;
+        }
+        .swiper-slide {
+            .swiper-slide__title {
+                display: none;
+            }
+        }
+        &__next-slide {
+            display: none;
+        }
+    }
     
 }
 @media screen and (max-width:1075px) {
