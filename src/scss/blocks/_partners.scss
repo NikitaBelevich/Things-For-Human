@@ -1,5 +1,5 @@
 .partners {
-    height: 1125px;
+    min-height: 1125px;
     background-color: $dark1;
 
     &__small-caption {
@@ -81,6 +81,7 @@
 
     &__company-name {
         margin-top: .8rem;
+        text-align: center;
     }
 
     .swiper-pagination {
