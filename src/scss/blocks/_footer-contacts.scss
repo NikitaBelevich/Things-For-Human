@@ -1,5 +1,5 @@
 .footer-contacts {
-    height: 1175px;
+    min-height: 1175px;
     background-color: $color-footer;
 
     &__small-caption {
@@ -27,7 +27,6 @@
         justify-content: space-between;
         flex-wrap: wrap;
         min-height: 326px;
-
     }
 
     &__field-wrapper {
@@ -103,17 +102,10 @@
         display: flex;
         justify-content: space-between;
     }
-    &__block-logo{
-
-    }
     &__fusion-logo {
         width: 45px;
         height: 45px;
     }
-    &__address {
-        
-    }
-
     &__office-name {
         color: #fff;
         @include open600;

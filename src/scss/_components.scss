@@ -53,7 +53,7 @@
 
 .title-h2 {
     @include merriweather400;
-    @include adaptive-font(22, 44);
+    @include adaptive-font(24, 44);
     letter-spacing: 2px;
     text-align: center;
     color: #fff;
@@ -87,5 +87,11 @@
     &:hover {
         color: #fff;
         box-shadow: 3px -3px 6px $brand-orange-color;
+    }
+    @media screen and (max-width:800px) {
+        width: 180px;
+        padding: 20px 25px;
+        font-size: 14px;
+        line-height: 20px;
     }
 }

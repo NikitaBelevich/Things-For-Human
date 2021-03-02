@@ -159,6 +159,25 @@
     }
 }
 
+@media screen and (max-width:800px) {
+    .footer-contacts {
+        &__form-container {
+            margin-top: 3rem;
+            padding: 26px 57px 57px 57px;
+            box-sizing: border-box;
+            width: auto;
+            height: 501px;
+            box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.3);
+            background-color: $dark2;
+        }
+        &__addresses {
+            width: auto;
+            margin-top: 6rem;
+            flex-wrap: wrap;
+        }
+    }
+}
+
 @media screen and (max-width:773px) {
     .our-team {
         &__worker {
@@ -228,6 +247,31 @@
     
 }
 
+@media screen and (max-width:700px) {
+    .footer-contacts {
+        &__form-container {
+            margin-top: 3rem;
+            width: auto;
+            height: auto;
+        }
+        &__field-wrapper {
+            flex-basis: 100%;
+        }
+        &__label {
+            font-size: 13px;
+        }
+        &__field-wrapper_message {
+            margin-top: 10px;
+        }
+        &__input {
+            width: auto;
+        }
+        &__office-name {
+            font-size: 13px;
+        }
+    }
+}
+
 @media screen and (max-width:660px) {
     
 }
@@ -247,6 +291,21 @@
             &::after {
                 display: none;
             }
+        }
+    }
+    .footer-contacts {
+        padding-bottom: 4rem;
+        &__addresses {
+            margin-top: 4rem;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__address {
+            margin-top: 3rem;
+        }
+        &__office-name {
+            font-size: 13px;
+            text-align: center;
         }
     }
 }
@@ -307,7 +366,11 @@
 } 
 
 @media screen and (max-width:420px){
-   
+    .footer-contacts {
+        &__form-container {
+            padding: 26px 30px 50px 30px;
+        }
+    }
 }
 
 @media screen and (max-width:370px){
