@@ -26,7 +26,6 @@
         flex-direction: column;
         align-items: center;
         &:nth-child(-n+4) {
-            // $dark1
             border-bottom: 1px solid $dark1;
         }
         &:not(:nth-child(4n)) {

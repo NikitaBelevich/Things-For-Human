@@ -24,8 +24,6 @@
         flex-basis: 23%;
     }
 
-    &__item-icon {}
-
     &__item-caption {
         @include merriweather400;
         @include adaptive-font(20, 30);
