@@ -79,29 +79,98 @@
             margin-top: 3rem;
             min-height: 377px;
         }
-        
+    }
+    .our-team {
+        &__workers {
+            margin-top: 5rem;
+        }
+        &__worker {
+            &:hover {
+                .our-team__worker-photo {
+                    transform: translate(-6.1rem, -2.25rem);
+                }
+            }
+        }
+        &__worker-description {
+            min-height: 261px;
+            height: auto;
+            position: absolute;
+        }
     }
     
-}
-@media screen and (max-width:1075px) {
     
+}
+
+@media screen and (max-width:1085px) {
+    .our-team {
+        &__worker {
+            &:hover {
+                .our-team__worker-photo {
+                    transform: translate(-5.5rem, -2.25rem);
+                }
+            }
+        }
+        &__worker-description {
+            padding: 0 10px;
+            width: 90%;
+            min-height: 261px;
+            height: auto;
+            right: 0;
+            top: 80px;
+        }
+    }
+    @keyframes transform-name{
+        0% {
+            transform: translate(0, 0);
+        }
+        100% {
+            transform: translate(0.5rem, -6.5rem);
+        }
+    }
+    @keyframes show-person-description{
+        0% {
+            visibility: hidden;
+            opacity: 0;
+        }
+        100% {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
 }
 
 @media screen and (max-width:991.98px){
     .our-team {
-        // height: 1500px;
-        // background-color: $dark2;
         &__workers {
-            grid-template-columns: repeat(auto-fill , minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fill , minmax(250px, 1fr));
         }
         &__worker {
-            // &:nth-child(-n+4) {
-            //     // $dark1
-            //     border-bottom: 1px solid red;
-            // }
-            // &:not(:nth-child(1n)) {
-            //     border-right: 1px solid red;
-            // }
+            &:nth-child(-n+6) {
+                // $dark1
+                border-bottom: 1px solid $dark1;
+            }
+            &:not(:nth-child(4n)) {
+                border-right-color: transparent;
+            }
+            &:not(:nth-child(3n)) {
+                border-right: 1px solid $dark1;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:773px) {
+    .our-team {
+        &__worker {
+            &:nth-child(-n+2) {
+                border-bottom: 1px solid $dark1;
+            }
+            &:not(:nth-child(3n)) {
+                border-right-color: transparent;
+            }
+            &:not(:nth-child(2n)) {
+                border-right: 1px solid $dark1;
+            }
         }
     }
 }
@@ -158,6 +227,7 @@
     }
     
 }
+
 @media screen and (max-width:660px) {
     
 }
@@ -180,6 +250,25 @@
         }
     }
 }
+
+@media screen and (max-width:525px){
+    .our-team {
+        &__worker {
+            &:hover {
+                .our-team__worker-photo {
+                    transform: translate(-6.5rem, -2.25rem);
+                }
+            }
+            &:nth-child(-n+7) {
+                border-bottom: 1px solid $dark1;
+            }
+            &:not(:nth-child(2n)) {
+                border-right-color: transparent;
+            }
+        }
+    }
+}
+
 
 @media screen and (max-width:460px){
     .header {
