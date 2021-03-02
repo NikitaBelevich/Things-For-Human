@@ -231,7 +231,7 @@
         }
         &__description-slide {
             width: 100%;
-            font-size: 16px;
+            font-size: 1rem;
             line-height: 30px;
         }
         &__manager-name {
@@ -258,7 +258,7 @@
             flex-basis: 100%;
         }
         &__label {
-            font-size: 13px;
+            font-size: 0.8125rem;
         }
         &__field-wrapper_message {
             margin-top: 10px;
@@ -267,7 +267,7 @@
             width: auto;
         }
         &__office-name {
-            font-size: 13px;
+            font-size: 0.8125rem;
         }
     }
 }
@@ -304,7 +304,7 @@
             margin-top: 3rem;
         }
         &__office-name {
-            font-size: 13px;
+            font-size: 0.8125rem;
             text-align: center;
         }
     }
@@ -377,13 +377,13 @@
     .header {
         &__features {
             li {
-                font-size: 10px;
+                font-size: 0.625rem;
             }
         }
     }
     .services {
         &__item-description {
-            font-size: 12px;
+            font-size: 0.75rem;
         }
     }
     .portfolio-slider,

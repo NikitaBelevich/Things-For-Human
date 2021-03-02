@@ -33,7 +33,7 @@
             margin-right: 0.9rem;
             margin-left: 0.8rem;
             @include open400;
-            font-size: 13px;
+            font-size: 0.8125rem;
             text-transform: uppercase;
             color: #fff;
             position: relative;
@@ -63,7 +63,7 @@
 
     &__btn-scroll {
         color: $brand-orange-color;
-        font-size: 19px;
+        font-size: 1.1875rem;
     }
 
     &__bottom {

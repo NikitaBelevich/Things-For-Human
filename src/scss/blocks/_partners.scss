@@ -19,8 +19,6 @@
         margin-top: 6.5rem;
     }
 
-    &__logo {}
-
     &__reviews-container {
         margin: 0 auto;
         margin-top: 5.9rem;
@@ -33,7 +31,6 @@
     &__slide {
         display: flex;
         flex-direction: column;
-        // justify-content: center;
         align-items: center;
     }
     &__person-picture {
@@ -45,7 +42,7 @@
         width: 613px;
         color: #bbbbbb;
         @include merriweather400;
-        font-size: 18px;
+        font-size: 1.125rem;
         letter-spacing: 1.13px;
         line-height: 35px;
         text-align: center;

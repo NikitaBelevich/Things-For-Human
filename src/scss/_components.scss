@@ -8,14 +8,14 @@
     padding-bottom: 5px;
     display: inline-flex;
     @include open600;
-    font-size: 14px;
+    font-size: 0.875rem;
     letter-spacing: -0.3px;
     text-transform: uppercase;
     color: #fff;
     cursor: pointer;
 
     @media screen and (max-width:370px){
-        font-size: 12px;
+        font-size: 0.75rem;
     }
 
     .icon-arrow {
@@ -25,11 +25,11 @@
 
 .small-caption {
     @include open400;
-    font-size: 14px;
+    font-size: 0.875rem;
     text-transform: uppercase;
     color: #fff;
     @media screen and (max-width:370px) {
-        font-size: 12px;
+        font-size: 0.75rem;
     }
 }
 
@@ -68,7 +68,7 @@
 .position-of-the-person {
     @include open400;
     color: #fff;
-    font-size: 13px;
+    font-size: 0.8125rem;
     letter-spacing: normal;
 }
 
@@ -79,7 +79,7 @@
     background-color: $brand-orange-color;
     color: #232323;
     @include open600;
-    font-size: 17px;
+    font-size: 1.0625rem;
     text-align: center;
     text-transform: uppercase;
     transition: .25s;
@@ -91,7 +91,7 @@
     @media screen and (max-width:800px) {
         width: 180px;
         padding: 20px 25px;
-        font-size: 14px;
+        font-size: 0.875rem;
         line-height: 20px;
     }
 }
