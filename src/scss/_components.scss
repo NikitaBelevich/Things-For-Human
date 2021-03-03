@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 10 version
+*/
+
 .container {
     max-width: 1146px;
     padding: 0 12px;
@@ -6,6 +13,8 @@
 
 .btn-with-an-arrow {
     padding-bottom: 5px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
     @include open600;
     font-size: 0.875rem;
@@ -19,7 +28,9 @@
     }
 
     .icon-arrow {
-        transform: translate(11px, -1px);
+        -webkit-transform: translate(11px, -1px);
+            -ms-transform: translate(11px, -1px);
+                transform: translate(11px, -1px);
     }
 }
 
@@ -82,11 +93,14 @@
     font-size: 1.0625rem;
     text-align: center;
     text-transform: uppercase;
+    -webkit-transition: .25s;
+    -o-transition: .25s;
     transition: .25s;
 
     &:hover {
         color: #fff;
-        box-shadow: 3px -3px 6px $brand-orange-color;
+        -webkit-box-shadow: 3px -3px 6px $brand-orange-color;
+                box-shadow: 3px -3px 6px $brand-orange-color;
     }
     @media screen and (max-width:800px) {
         width: 180px;

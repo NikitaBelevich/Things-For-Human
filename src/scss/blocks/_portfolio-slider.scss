@@ -6,8 +6,12 @@
 
     .swiper-container {
         max-height: 600px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 
     .swiper-wrapper {
@@ -42,7 +46,8 @@
     .swiper-slide__picture {
         max-width: 100%;
         max-height: 100%;
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
     }
 
     .swiper-slide-active {
@@ -55,7 +60,9 @@
         position: relative;
         top: 35px;
         left: 50%;
-        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
     }
     .swiper-pagination-bullet {
         height: 3px;

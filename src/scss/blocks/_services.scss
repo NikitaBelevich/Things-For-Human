@@ -13,15 +13,20 @@
     }
 
     &__item-wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         padding-top: 6.7rem;
         padding-left: 4rem;
         padding-right: 4rem;
     }
 
     &__item {
-        flex-basis: 23%;
+        -ms-flex-preferred-size: 23%;
+            flex-basis: 23%;
     }
 
     &__item-caption {

@@ -1,5 +1,6 @@
 .popup-message {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     margin-top: 10px;
     padding: 10px 15px;
     width: 350px;
@@ -11,7 +12,10 @@
 .popup-message_style-class {
     border-radius: 4px;
     background-color: $brand-orange-color;
-    box-shadow: 0px 0px 8px $brand-orange-color;
+    -webkit-box-shadow: 0px 0px 8px $brand-orange-color;
+            box-shadow: 0px 0px 8px $brand-orange-color;
+    -webkit-transition: .3s ease-out;
+    -o-transition: .3s ease-out;
     transition: .3s ease-out;
     @include open600;
     font-size: 16px;
@@ -28,6 +32,8 @@
     bottom: 15px;
     @media screen and (max-width:575px) {
         right: 50%;
-        transform: translate(50%, 0);
+        -webkit-transform: translate(50%, 0);
+            -ms-transform: translate(50%, 0);
+                transform: translate(50%, 0);
     }
 }

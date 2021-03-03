@@ -13,9 +13,15 @@
     }
 
     &__logoes {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         margin-top: 6.5rem;
     }
 
@@ -24,14 +30,22 @@
         margin-top: 5.9rem;
         width: 750px;
         height: 377px;
-        box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.3);
+        -webkit-box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.3);
+                box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.3);
         background-color: $dark2;
     }
 
     &__slide {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     &__person-picture {
         border-radius: 50%;
@@ -85,7 +99,9 @@
         position: relative;
         top: 35px;
         left: 50%;
-        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
     }
     .swiper-pagination-bullet {
         height: 3px;
