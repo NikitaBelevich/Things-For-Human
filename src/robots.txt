@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: *.jpg
+Disallow: *.png
+Disallow: *.jpeg
+Disallow: *.gif
+Disallow: *.svg
+Disallow: *.css
+Disallow: *.js
+Crawl-delay: 0.5
