@@ -1,4 +1,13 @@
-
+@media screen and (max-width:1919px) {
+    .header {
+        &__arrow-down {
+            margin-top: calc(4rem + 7vh);
+        }
+        &__bottom {
+            margin-top: calc(3rem + 6vh);
+        }
+    }
+}
 @media screen and (max-width:1420px) {
     
 }
