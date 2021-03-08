@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 46">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #feb960;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+
+      .cls-2 {
+        font-size: 22px;
+        fill: #feb960;
+        font-family: ArialMT, Arial;
+      }
+    </style>
+  </defs>
+  <title>Asset 2</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <circle class="cls-1" cx="23" cy="23" r="21.5"/>
+      <text class="cls-2" transform="translate(16.7 31.37)">F</text>
+    </g>
+  </g>
+</svg>
